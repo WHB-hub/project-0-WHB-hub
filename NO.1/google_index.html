@@ -1,0 +1,175 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head><title>Search</title>
+	<style type="text/css">
+	
+		a:link {text-decoration:none;color:#443C48}    /* unvisited link */
+		a:visited {text-decoration:none;color: #443C48} /* visited link */
+		a:hover {text-decoration:underline;color: #443C48}   /* mouse over link */
+		a:active {text-decoration:underline;color: #443C48}  /* selected link */
+		a.right1{
+			position: absolute;
+			right: 100px
+		}
+		a.right2{
+			position: absolute;
+			right: 130px
+		}
+		a.right3{
+			position: absolute;
+			right: 200px
+		}
+		a.right4{
+			position: absolute;
+			right: 250px
+		}	
+		a.button{
+			color:#F7F4F4;
+		}
+		button.login {
+			position: absolute;
+			right:20px;
+			background-color:  #1A73E8;
+			border: none;
+			color: white;
+			border-radius: 6px;
+			padding: 10px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		
+}
+		button.down1 {
+			position: absolute;
+			left:618px;
+			background-color:  #F8F9FA;
+			color: black;
+			border-radius: 6px;
+			padding: 10px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;		
+}		
+		button.down2 {
+			position: absolute;
+			left:780px;
+			background-color:  #F8F9FA;
+			color: black;
+			border-radius: 6px;
+			padding: 10px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;		
+}
+		
+		#search { 
+			width: 440px;
+			height: 40px;
+			border:none;    /*取消默认的边框以设置自定义边框*/
+			outline:none;   /*取消浏览器默认的蓝光边框以设置自定义的输入框*/
+			font-size: 16px;        
+			color: rgb(112, 112, 112);
+			margin-left: 10px;
+		}
+		.searchbar {        /*目的是设置自定义边框，比如圆角与阴影*/
+			border: rgb(218, 218, 218) solid 1px;
+			border-radius: 2em;
+			width: 552px;
+			height: 42px;
+			box-shadow: 0px 0px 5px rgb(212, 212, 212);
+			margin: 0 auto;
+		}
+
+		.mcp {
+			height: 35px;
+		}
+
+		.mg {
+			height: 25px;
+			margin-left: 15px;
+		}
+		#search, .mcp, .mg {
+			vertical-align: middle;
+		}
+
+		
+	</style>
+	 </head> 
+	
+	<body>
+		<div class id="header" style="width: 500px; height: 50px">
+			<div style="width: 200px； height: 50px; float:left;text-align:center;">
+			<h5><a href="https://about.google/" >Google 大全</a></h5>
+			</div>	
+			<div style="width: 100px; height: 50px; float:left;text-align:center;">
+			<h5><a href="https://store.google.com/" >商店</a></h5>
+			</div>	
+			<div style="width: 50px; height: 50px;float:right;text-align:center;" >
+			<h5><a class="right4" href="https://www.google.com/intl/zh-CN/gmail/about/#" target="_blank">Gmail</a></h5>
+			</div>		
+			<div style="width: 50px; height: 50px;float:right;text-align:center;" >
+			<h5><a class="right3" href="https://www.google.com.tw/imghp?hl=zh-CN&ogbl" >图片</a></h5>
+			</div>	
+			<div style="width: 100px; height: 50px;float:right;text-align:center;" >
+			<a class="right2" href="https://about.google/intl/zh-CN/products/">
+				<img src="function.jpg">
+				</a>
+			</div>
+			<div style="width: 100px; height: 50px; float:right;">
+			<a href="https://accounts.google.com/signin/v2/identifier?hl=zh-CN&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+				<button class="login"; > 
+				<onclick> 登陆
+				</onclick>		
+				</button>
+				</a>
+			</div>
+			
+		</div>
+		<div class id="log" align="center"  style="height: 280px">
+			<div align="center" style="height: 130px"></div>
+			<img src="googlelogo.png" width="300px" alt="Wrong" ></img>
+		</div>
+	
+
+	
+		<div class="searchbar">
+		<form action="https://google.com/search"> 
+			<img src="search.jpg" class="mg">
+			<input type="text" name="q" id="search"> 
+			<img src="voicetube.jpg" class="mcp">
+		</form> 
+		<div style="height: 20px" align="center">
+			<div style="width: 100px; height: 50px;float:right; ">
+			<a href="">
+				<button class="down1"; > 
+				<onclick> Google搜索</onclick>		
+				</button>
+				</a>
+			</div>
+			<a href="">
+				<div style="width: 100px; height: 50px;float:left;">
+			<button class="down2"; > 
+				<onclick> 手气不错</onclick>		
+				</button>
+					</a>
+			</div>
+			
+		</div>
+        
+			
+</div>
+
+		
+		
+	</body>
+
+</html>
