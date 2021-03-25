@@ -1,0 +1,160 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head><title>Search</title>
+	<style type="text/css">
+	
+		a:link {text-decoration:none;color:#443C48}    /* unvisited link */
+		a:visited {text-decoration:none;color: #443C48} /* visited link */
+		a:hover {text-decoration:underline;color: #443C48}   /* mouse over link */
+		a:active {text-decoration:underline;color: #443C48}  /* selected link */
+		.left2{
+			position:relative;
+			left: 50px;
+			top: 10px;
+		}
+		.searchstyle{
+			position:relative;
+			left: 50px;
+		}
+		button.login {
+			position: absolute;
+			right:20px;
+			background-color:  #1A73E8;
+			border: none;
+			color: white;
+			border-radius: 6px;
+			padding: 10px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		
+}
+		button.down1 {
+			position: absolute;
+			left:618px;
+			background-color:  #F8F9FA;
+			color: black;
+			border-radius: 6px;
+			padding: 10px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;		
+}		
+		button.down2 {
+			position: absolute;
+			left:780px;
+			background-color:  #F8F9FA;
+			color: black;
+			border-radius: 6px;
+			padding: 10px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;		
+}
+		
+		#search { 
+			width: 440px;
+			height: 40px;
+			border:none;    /*取消默认的边框以设置自定义边框*/
+			outline:none;   /*取消浏览器默认的蓝光边框以设置自定义的输入框*/
+			font-size: 16px;        
+			color: rgb(112, 112, 112);
+			margin-left: 10px;
+		}
+		.searchbar {        /*目的是设置自定义边框，比如圆角与阴影*/
+			border: rgb(218, 218, 218) solid 1px;
+			border-radius: 2em;
+			width: 552px;
+			height: 42px;
+			box-shadow: 0px 0px 5px rgb(212, 212, 212);
+			margin: 0 auto;
+		}
+
+		.mcp {
+			height: 35px;
+		}
+
+		.mg {
+			height: 25px;
+			margin-left: 15px;
+		}
+		#search, .mcp, .mg {
+			vertical-align: middle;
+		}
+
+		
+	</style>
+	 </head> 
+	
+	<body>
+		<div class id="header" style="width:auto ; height: 50px; color:#CDCDCD; ">
+			<div style="width: 100px; height: 50px;float:left;text-align:center;" >
+				<div style="width:auto ; height: 10px">  </div>
+				<a  href="https://www.google.com.hk">
+				<img height="40px" src="googlelogo.png">
+				</a>
+			</div>
+			<div style="width: 100px; height: 50px;float:right;text-align:center;" >
+			<a class="right2" href="https://about.google/intl/zh-CN/products/">
+				<img src="function.jpg">
+				</a>
+			</div>
+			<div style="width: 100px; height: 50px; float:right;">
+			<a href="https://accounts.google.com/signin/v2/identifier?hl=zh-CN&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+				<button class="login"; > 
+				<onclick> 登陆
+				</onclick>		
+				</button>
+				</a>
+			</div>
+		</div>
+		<div style="width:auto ; height: 150px;">
+			<h2 class="left2" style="color: #FF0004">高级搜索</h2>
+			<div style="width:auto ; height: 10px">  </div>
+			<HR></HR>
+		</div>
+		<div class id="content"; style="width: auto; height: auto">
+			<form action="https://www.google.com.hk/search">
+				
+			<div style="width:auto; height: 40px"> 使用以下条件来搜索网页...</div>
+		
+			<div style="width:auto; height: 40px"> 以下所有字词：
+				<input class="" type="text" name="as_q" class="searchstyle"> 
+			</div>
+			<div style="width:auto; height: 40px"> 与以下字词完全匹配：
+				<input type="text" name="as_epq" class="searchstyle"> 
+			</div>
+			<div style="width:auto; height: 40px"> 以下任意字词：
+				<input type="text" name="as_oq" class="searchstyle">
+			</div>
+			<div style="width:auto; height: 40px"> 不含以下任意字词：
+				<input type="text" name="as_eq" class="searchstyle">
+			</div>
+			<div style="width:auto; height: 40px"> 数字范围：从：
+				<input type="text" name="as_nlo" class="searchstyle">
+				到
+				<input type="text" name="as_nhi" class="searchstyle">
+			</div>
+			<div class="searchstyle"><input type="submit" name="submit" value="提交">
+				</div>
+		</form>
+		
+		</div>
+       
+			
+</div>
+
+		
+		
+	</body>
+
+</html>
