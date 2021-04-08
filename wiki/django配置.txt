@@ -1,0 +1,9 @@
+1：在anaconda中创建一个新的虚拟环境：
+
+cd D:\anaconda\anaconda3\envs
+conda create --name wikiwork python=3.8.3
+conda activate wikiwork
+pip install django -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com  //直接安装会拦截报错
+conda list //检查版本引入
+
+//pycharm中 在setting中project Interpreter中设置使用的环境，注意找到虚拟环境
